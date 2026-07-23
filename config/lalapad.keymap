@@ -201,10 +201,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp ESCAPE    &kp F4       &kp F5       &kp F6          &kp F11      &kp LANG_ZENKAKUHANKAKU  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp BACKSPACE
+&kp ESCAPE    &kp F4       &kp F5       &kp F6          &kp F11      &kp LANG_ZENKAKUHANKAKU  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans             &kp PRINTSCREEN  &kp BACKSPACE
 &kp LEFT_ALT  &kp F2       &kp F7       &kp F10         &kp F12      &trans                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp L              &kp LWIN         &kp ENTER
 &kp LCTRL     &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C     &mt LCTRL V  &mt LCTRL B              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_WIN LEFT  &mt LWIN DOWN    &mt LEFT_WIN RIGHT
-&kp ASTRK     &trans       &trans       &kp LEFT_SHIFT  &trans       &kp MINUS                &kp SLASH     &trans        &kp LSHFT     &kp KP_NUMBER_0    &dot_comma       &kp KP_PLUS
+&kp ASTRK     &trans       &trans       &kp LEFT_SHIFT  &trans       &kp MINUS                &kp SLASH     &trans        &kp SPACE     &kp KP_NUMBER_0    &dot_comma       &kp KP_PLUS
                            &trans       &trans          &trans       &trans                   &trans        &trans        &trans        &trans
             >;
         };
@@ -212,11 +212,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&kp ESCAPE    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp LEFT_ALT  &trans      &trans             &trans           &trans                &trans                &kp AT_SIGN      &kp PERCENT       &kp COLON          &kp SEMICOLON         &kp DOLLAR             &kp ENTER
+&kp RCTRL     &trans      &trans             &trans           &trans                &trans                &kp HASH         &kp SQT           &kp DOUBLE_QUOTES  &kp CARET             &kp HASH               &trans
+&trans        &trans      &trans             &trans           &trans                &kp GRAVE             &kp SLASH        &trans            &kp SPACE          &trans                &trans                 &trans
+                          &trans             &trans           &trans                &trans                &trans           &trans            &trans             &trans
             >;
         };
 
