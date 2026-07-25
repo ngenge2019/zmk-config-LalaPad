@@ -215,7 +215,7 @@
 &kp ESCAPE    &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &kp LEFT_ALT  &trans             &trans             &trans           &trans                &trans                &kp AT_SIGN      &kp AMPERSAND     &kp COLON          &kp SEMICOLON         &kp DOLLAR             &kp ENTER
 &kp RCTRL     &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN   &trans           &trans                &trans                &kp PERCENT      &kp SQT           &kp DOUBLE_QUOTES  &kp CARET             &kp HASH               &trans
-&trans        &trans             &trans             &trans           &trans                &kp LS(GRAVE)         &kp SLASH        &trans            &kp SPACE          &trans                &trans                 &trans
+&trans        &trans             &trans             &trans           &trans                &kp LS(GRAVE)         &kp SLASH        &trans            &kp SPACE          &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2
                                  &trans             &trans           &trans                &trans                &trans           &trans            &trans             &trans
             >;
         };
