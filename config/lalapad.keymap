@@ -201,11 +201,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp ESCAPE    &kp F4       &kp F5       &kp F6          &kp F11      &kp LANGUAGE_5  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans             &kp PRINTSCREEN  &kp BACKSPACE
-&kp LEFT_ALT  &kp F2       &kp F7       &kp F10         &kp F12      &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp L              &kp LWIN         &kp ENTER
-&kp LCTRL     &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C     &mt LCTRL V  &mt LCTRL B     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_WIN LEFT  &mt LWIN DOWN    &mt LEFT_WIN RIGHT
-&kp ASTRK     &trans       &trans       &kp LEFT_SHIFT  &trans       &kp MINUS       &kp SLASH     &trans        &kp SPACE     &kp KP_NUMBER_0    &dot_comma       &kp KP_PLUS
-                           &trans       &trans          &trans       &trans          &trans        &trans        &trans        &trans
+&kp ESCAPE    &kp F4       &kp F5       &kp F6          &kp F11      &kp LC(SPACE)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans           &kp PRINTSCREEN     &kp BACKSPACE
+&kp LEFT_ALT  &kp F2       &kp F7       &kp F10         &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp L            &kp LWIN            &kp ENTER
+&kp LCTRL     &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C     &mt LCTRL V  &mt LCTRL B    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(LEFT)     &kp LG(DOWN_ARROW)  &kp LG(RIGHT)
+&kp ASTRK     &trans       &trans       &kp LEFT_SHIFT  &trans       &kp MINUS      &kp SLASH     &trans        &kp SPACE     &kp KP_NUMBER_0  &dot_comma          &kp KP_PLUS
+                           &trans       &trans          &trans       &trans         &trans        &trans        &trans        &trans
             >;
         };
 
@@ -215,7 +215,7 @@
 &kp ESCAPE    &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &kp LEFT_ALT  &trans             &trans             &trans           &trans                &trans                &kp AT_SIGN      &kp AMPERSAND     &kp COLON          &kp SEMICOLON         &kp DOLLAR             &kp ENTER
 &kp RCTRL     &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN   &trans           &trans                &trans                &kp PERCENT      &kp SQT           &kp DOUBLE_QUOTES  &kp CARET             &kp HASH               &trans
-&trans        &trans             &trans             &trans           &trans                &kp GRAVE             &kp SLASH        &trans            &kp SPACE          &trans                &trans                 &trans
+&trans        &trans             &trans             &trans           &trans                &kp LS(GRAVE)         &kp SLASH        &trans            &kp SPACE          &trans                &trans                 &trans
                                  &trans             &trans           &trans                &trans                &trans           &trans            &trans             &trans
             >;
         };
