@@ -180,6 +180,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        minus {
+            bindings = <&none>;
+            key-positions = <18 19>;
+        };
+
+        hatena {
+            bindings = <&none>;
+            key-positions = <30 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
