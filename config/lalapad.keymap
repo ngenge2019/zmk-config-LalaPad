@@ -192,6 +192,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <30 31>;
         };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <6 7>;
+        };
     };
 
     keymap {
