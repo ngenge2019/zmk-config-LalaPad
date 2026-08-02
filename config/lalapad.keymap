@@ -184,12 +184,12 @@
         compatible = "zmk,combos";
 
         minus {
-            bindings = <&none>;
+            bindings = <&kp MINUS>;
             key-positions = <18 19>;
         };
 
         hatena {
-            bindings = <&none>;
+            bindings = <&kp QUESTION>;
             key-positions = <30 31>;
         };
     };
