@@ -197,6 +197,21 @@
             bindings = <&kp SLASH>;
             key-positions = <6 7>;
         };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <16 17>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <4 5>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 29>;
+        };
     };
 
     keymap {
