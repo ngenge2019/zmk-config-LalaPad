@@ -222,6 +222,11 @@
             bindings = <&kp LG(L)>;
             key-positions = <2 21>;
         };
+
+        plint {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <10 21>;
+        };
     };
 
     keymap {
