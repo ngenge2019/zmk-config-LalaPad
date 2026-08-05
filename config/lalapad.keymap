@@ -241,7 +241,7 @@
 
             bindings = <
 &kp ESCAPE    &kp F4       &kp F5       &kp F6          &kp F11      &kp LC(SPACE)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTRK        &kp PRINTSCREEN  &kp BACKSPACE
-&kp LEFT_ALT  &kp F2       &kp F7       &kp F10         &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS         &none            &kp ENTER
+&kp LEFT_ALT  &kp F2       &kp F7       &kp F10         &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS         &kp LG(L)        &kp ENTER
 &kp LCTRL     &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C     &mt LCTRL V  &mt LCTRL B    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT          &kp LEFT_GUI
 &none         &trans       &trans       &kp LEFT_SHIFT  &trans       &kp MINUS      &kp SLASH     &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(RIGHT)    &kp LG(DOWN)
                            &trans       &trans          &trans       &trans         &trans        &trans        &trans        &trans
