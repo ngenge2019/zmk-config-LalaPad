@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -227,6 +226,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <10 21>;
         };
+
+        rightcl {
+            bindings = <&mkp RCLK>;
+            key-positions = <29 41>;
+        };
     };
 
     keymap {
@@ -250,11 +254,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp ESCAPE    &kp F4  &kp F5       &kp F6       &kp F11      &kp LC(SPACE)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE       &kp BACKSPACE  &kp BACKSPACE
-&kp LEFT_ALT  &kp F2  &kp F7       &kp F10      &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none            &kp ENTER      &kp ENTER
-&trans        &trans  &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C  &mt LCTRL V    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &kp LEFT_GUI
-&none         &trans  &trans       &trans       &trans       &trans         &trans        &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(DOWN)   &kp LG(RIGHT)
-                      &trans       &trans       &trans       &trans         &trans        &trans        &trans        &trans
+&kp ESCAPE    &kp F4  &kp F5        &kp F6       &kp F11      &kp LC(SPACE)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE       &kp BACKSPACE  &kp BACKSPACE
+&kp LEFT_ALT  &kp F2  &kp F7        &kp F10      &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none            &kp ENTER      &kp ENTER
+&trans        &trans  &mt LCTRL Z   &mt LCTRL X  &mt LCTRL C  &mt LCTRL V    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &kp LEFT_GUI
+&none         &trans  &kp LEFT_ALT  &trans       &trans       &trans         &trans        &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(DOWN)   &kp LG(RIGHT)
+                      &trans        &trans       &trans       &trans         &trans        &trans        &trans        &trans
             >;
         };
 
@@ -274,11 +278,11 @@
             sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans        &trans          &trans
-                &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN      &kp UP_ARROW      &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(DOWN)  &kp LEFT_GUI      &kp LG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans            &trans         &trans  &trans
+                &trans  &trans  &trans  &trans  &trans        &trans        &trans            &trans
             >;
         };
 
