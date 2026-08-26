@@ -241,11 +241,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q           &kp W       &kp E   &kp R  &kp T      &kp Y          &kp U        &kp I            &kp O       &kp P       &kp BSPC
-&kp TAB    &kp A           &kp S       &kp D   &kp F  &kp G      &kp H          &kp J        &kp K            &kp L       &kp ENTER   &kp ENTER
-&kp LCTRL  &kp LCTRL       &kp Z       &kp X   &kp C  &kp V      &kp B          &kp N        &kp M            &kp COMMA   &kp PERIOD  &none
-&none      &kp LEFT_SHIFT  &kp TAB     &mo 1   &mo 3  &mkp LCLK  &kp BACKSPACE  &mo 2        &kp SPACE        &none       &kp ESCAPE  &none
-                           &kp ESCAPE  &trans  &mo 1  &mo 2      &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp ESC    &kp Q      &kp W       &kp E   &kp R           &kp T           &kp Y          &kp U        &kp I            &kp O       &kp P       &kp BSPC
+&kp TAB    &kp A      &kp S       &kp D   &kp F           &kp G           &kp H          &kp J        &kp K            &kp L       &kp ENTER   &kp ENTER
+&kp LCTRL  &kp LCTRL  &kp Z       &kp X   &kp C           &kp V           &kp B          &kp N        &kp M            &kp COMMA   &kp PERIOD  &none
+&none      &kp TAB    &mo 3       &mo 1   &kp LEFT_SHIFT  &mkp LCLK       &kp BACKSPACE  &mo 2        &kp SPACE        &none       &kp ESCAPE  &none
+                      &kp ESCAPE  &trans  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
@@ -254,11 +254,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp ESCAPE    &kp F4  &kp F5        &kp F6       &kp F11      &kp LC(SPACE)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE       &kp BACKSPACE  &kp BACKSPACE
-&kp LEFT_ALT  &kp F2  &kp F7        &kp F10      &kp F12      &trans         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none            &kp ENTER      &kp ENTER
-&trans        &trans  &mt LCTRL Z   &mt LCTRL X  &mt LCTRL C  &mt LCTRL V    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &kp LEFT_GUI
-&none         &trans  &kp LEFT_ALT  &trans       &trans       &trans         &trans        &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(DOWN)   &kp LG(RIGHT)
-                      &trans        &trans       &trans       &trans         &trans        &trans        &trans        &trans
+&kp ESCAPE    &kp LC(SPACE)  &kp F4       &kp F5       &kp F6       &kp F11      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE       &kp BACKSPACE  &kp BACKSPACE
+&kp LEFT_ALT  &trans         &kp F2       &kp F7       &kp F10      &kp F12      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none            &kp ENTER      &kp ENTER
+&trans        &kp LC(B)      &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C  &mt LCTRL V  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &kp LEFT_GUI
+&none         &kp LEFT_ALT   &trans       &trans       &trans       &trans       &trans        &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(DOWN)   &kp LG(RIGHT)
+                             &trans       &trans       &trans       &trans       &trans        &trans        &trans        &trans
             >;
         };
 
