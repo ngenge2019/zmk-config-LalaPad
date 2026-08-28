@@ -167,16 +167,6 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             label = "ALLOW_END";
         };
-
-        mt2: mod_tap2 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     combos {
@@ -241,11 +231,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q      &kp W       &kp E   &kp R           &kp T           &kp Y          &kp U        &kp I            &kp O       &kp P       &kp BSPC
-&kp TAB    &kp A      &kp S       &kp D   &kp F           &kp G           &kp H          &kp J        &kp K            &kp L       &kp ENTER   &kp ENTER
-&kp LCTRL  &kp LCTRL  &kp Z       &kp X   &kp C           &kp V           &kp B          &kp N        &kp M            &kp COMMA   &kp PERIOD  &none
-&none      &kp TAB    &mo 3       &mo 1   &kp LEFT_SHIFT  &mkp LCLK       &kp BACKSPACE  &mo 2        &kp SPACE        &none       &kp ESCAPE  &none
-                      &kp ESCAPE  &trans  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp ESC    &kp Q           &kp W       &kp E   &kp R           &kp T           &kp Y          &kp U        &kp I            &kp O       &kp P       &kp BSPC
+&kp TAB    &kp A           &kp S       &kp D   &kp F           &kp G           &kp H          &kp J        &kp K            &kp L       &kp ENTER   &kp ENTER
+&kp LCTRL  &kp LCTRL       &kp Z       &kp X   &kp C           &kp V           &kp B          &kp N        &kp M            &kp COMMA   &kp PERIOD  &none
+&none      &kp LC(ESCAPE)  &mo 3       &mo 1   &kp LEFT_SHIFT  &mkp LCLK       &kp BACKSPACE  &mo 2        &kp SPACE        &none       &kp TAB     &none
+                           &kp ESCAPE  &trans  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
@@ -256,8 +246,8 @@
             bindings = <
 &kp ESCAPE    &kp LC(SPACE)  &kp F4       &kp F5       &kp F6       &kp F11      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE       &kp BACKSPACE  &kp BACKSPACE
 &kp LEFT_ALT  &trans         &kp F2       &kp F7       &kp F10      &kp F12      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none            &kp ENTER      &kp ENTER
-&trans        &kp LC(B)      &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C  &mt LCTRL V  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &kp LEFT_GUI
-&none         &kp LEFT_ALT   &trans       &trans       &trans       &trans       &trans        &trans        &kp SPACE     &kp LG(LEFT)     &kp LG(DOWN)   &kp LG(RIGHT)
+&trans        &kp LC(B)      &mt LCTRL Z  &mt LCTRL X  &mt LCTRL C  &mt LCTRL V  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_NUMBER_0  &kp DOT        &trans
+&none         &trans         &trans       &trans       &trans       &trans       &trans        &trans        &kp SPACE     &trans           &kp LEFT_ALT   &trans
                              &trans       &trans       &trans       &trans       &trans        &trans        &trans        &trans
             >;
         };
@@ -268,7 +258,7 @@
 &kp ESCAPE    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &kp LEFT_ALT  &trans      &trans             &trans           &trans                &trans                &kp AT_SIGN      &kp AMPERSAND     &kp COLON          &kp SEMICOLON         &kp DOLLAR             &kp ENTER
 &kp RCTRL     &trans      &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3          &kp PERCENT      &kp SQT           &kp DOUBLE_QUOTES  &kp CARET             &kp HASH               &kp DOLLAR
-&trans        &trans      &trans             &trans           &trans                &trans                &kp DELETE       &trans            &kp SPACE          &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2
+&trans        &trans      &trans             &trans           &trans                &trans                &kp DELETE       &trans            &kp SPACE          &trans                &trans                 &trans
                           &trans             &trans           &trans                &trans                &trans           &trans            &trans             &trans
             >;
         };
