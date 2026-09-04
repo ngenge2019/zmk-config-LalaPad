@@ -226,6 +226,11 @@
             bindings = <&kp COMMA>;
             key-positions = <32 33>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     keymap {
