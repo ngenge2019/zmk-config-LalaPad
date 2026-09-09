@@ -279,7 +279,7 @@
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp UP_ARROW  &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp LEFT      &kp DOWN      &kp RIGHT      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LEFT_GUI  &kp LG(RIGHT)  &kp P   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans         &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans
