@@ -233,6 +233,15 @@
         };
     };
 
+    macros {
+        kagi: kagi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RBKT &kp LEFT>;
+            label = "KAGI";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
