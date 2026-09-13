@@ -240,6 +240,13 @@
             bindings = <&kp LEFT_BRACKET &kp RBKT &kp LEFT>;
             label = "KAGI";
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "KAKKO";
+        };
     };
 
     keymap {
@@ -274,11 +281,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp ESCAPE    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LPAR          &kp RIGHT_PARENTHESIS  &kp DELETE  &trans
-&kp LEFT_ALT  &trans      &trans             &kp CARET        &kp HASH              &kp DOLLAR            &kp AT_SIGN       &kp EXCLAMATION    &kp COLON         &kp SEMICOLON          &kp ENTER   &trans
-&kp RCTRL     &trans      &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3          &kp PERCENT       &kp AMPERSAND      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES      &trans      &trans
-&trans        &trans      &trans             &trans           &trans                &trans                &trans            &trans             &kp SPACE         &trans                 &trans      &trans
-                          &trans             &trans           &trans                &trans                &trans            &trans             &trans            &trans
+&kp ESCAPE    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kagi        &kp RIGHT_BRACKET  &kakko            &kp RIGHT_PARENTHESIS  &kp DELETE  &trans
+&kp LEFT_ALT  &trans      &trans             &kp CARET        &kp HASH              &kp DOLLAR            &kp AT_SIGN  &kp EXCLAMATION    &kp COLON         &kp SEMICOLON          &kp ENTER   &trans
+&kp RCTRL     &trans      &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3          &kp PERCENT  &kp AMPERSAND      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES      &trans      &trans
+&trans        &trans      &trans             &trans           &trans                &trans                &trans       &trans             &kp SPACE         &trans                 &trans      &trans
+                          &trans             &trans           &trans                &trans                &trans       &trans             &trans            &trans
             >;
         };
 
