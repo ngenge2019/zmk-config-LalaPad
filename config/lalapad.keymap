@@ -65,6 +65,11 @@
     };
 };
 
+&mt {
+    tapping-term-ms = <150>;
+    quick-tap-ms = <120>;
+};
+
 / {
     behaviors {
         // Encoder to Mouse Scroll
@@ -248,7 +253,6 @@
             label = "KAKKO";
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
