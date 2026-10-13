@@ -304,11 +304,11 @@
             sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp UP_ARROW  &trans         &trans  &trans
-&trans  &trans  &trans  &kp D   &trans  &trans  &kp F4  &kp LEFT      &kp DOWN      &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LEFT_GUI  &kp LG(RIGHT)  &kp P   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans         &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans
+&trans  &trans  &trans         &trans            &trans  &trans  &trans  &trans        &kp UP_ARROW  &trans         &trans  &trans
+&trans  &trans  &trans         &kp D             &trans  &trans  &kp F4  &kp LEFT      &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &trans  &kp C_AC_BACK  &kp C_AC_FORWARD  &trans  &trans  &trans  &kp LG(LEFT)  &kp LEFT_GUI  &kp LG(RIGHT)  &kp P   &trans
+&trans  &trans  &trans         &trans            &trans  &trans  &trans  &trans        &trans        &trans         &trans  &trans
+                &trans         &trans            &trans  &trans  &trans  &trans        &trans        &trans
             >;
         };
 
